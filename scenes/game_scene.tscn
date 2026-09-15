@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://db62lq1feyb8r" path="res://scenes/background.tscn" id="1_w5aja"]
 [ext_resource type="PackedScene" uid="uid://0246bhqw5bu8" path="res://scenes/character.tscn" id="2_onqr8"]
+[ext_resource type="PackedScene" uid="uid://d27m3aot0nn4u" path="res://scenes/text_ui.tscn" id="3_ycayy"]
 
 [node name="GameScene" type="Node" unique_id=106987712]
 
@@ -11,3 +12,5 @@ curr_background = 2
 [node name="Character" parent="." unique_id=126382529 instance=ExtResource("2_onqr8")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1951010855]
+
+[node name="TextUI" parent="." unique_id=1459917468 instance=ExtResource("3_ycayy")]
