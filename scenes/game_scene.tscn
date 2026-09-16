@@ -20,5 +20,4 @@ curr_char = 4
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1951010855]
 
-[connection signal="change_dialogue_UI" from="." to="TextUI" method="_on_game_scene_change_dialogue_ui"]
 [connection signal="text_button_pressed" from="TextUI" to="." method="_on_text_ui_text_button_pressed"]
