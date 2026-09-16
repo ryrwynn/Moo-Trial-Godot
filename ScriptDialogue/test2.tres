@@ -6,5 +6,5 @@
 script = ExtResource("1_dd33y")
 CHARACTER = 2
 BACKGROUND = 1
-dialogue_array = Array[String](["Test 2 Script", "Test 2 continuation test"])
+dialogue_array = Array[String](["3", "4"])
 metadata/_custom_type_script = "uid://frh0brqorqb3"

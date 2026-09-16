@@ -20,5 +20,5 @@ func _process(_delta: float) -> void:
 		set_character(curr_char)
 	pass
 	
-func set_character(_curr_char) -> void:
+func set_character(curr_char) -> void:
 	$CharacterSprite.texture = character_array[curr_char]

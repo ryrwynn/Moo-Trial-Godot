@@ -6,7 +6,6 @@ signal text_button_pressed()
 @export var dialogue_text : String
 
 func _on_dialogue_button_pressed() -> void:
-	print("button pressed")
 	emit_signal("text_button_pressed")
 	pass # Replace with function body.
 

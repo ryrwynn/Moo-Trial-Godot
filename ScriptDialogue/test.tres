@@ -5,6 +5,6 @@
 
 [resource]
 script = ExtResource("1_wylnb")
-dialogue_array = Array[String](["Test 1 :)", "Test 2 Ofc", "Test 3 dialogue", "Test 4 keep writing"])
+dialogue_array = Array[String](["1", "2"])
 nextScript = ExtResource("1_ftddb")
 metadata/_custom_type_script = "uid://frh0brqorqb3"
