@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://0246bhqw5bu8" path="res://scenes/character.tscn" id="2_onqr8"]
 [ext_resource type="Resource" uid="uid://bo0ksfpce6is2" path="res://ScriptDialogue/test/test.tres" id="2_y3j0m"]
 [ext_resource type="PackedScene" uid="uid://d27m3aot0nn4u" path="res://scenes/text_ui.tscn" id="3_ycayy"]
+[ext_resource type="PackedScene" uid="uid://dqpdvqx3d3a43" path="res://scenes/choice_ui.tscn" id="6_rurhu"]
 
 [node name="GameScene" type="Node" unique_id=106987712]
 script = ExtResource("1_bw6k5")
@@ -19,6 +20,8 @@ curr_char = 4
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1951010855]
 
 [node name="DialogueUI" type="CanvasLayer" parent="." unique_id=1830885724]
+
+[node name="ChoiceUI" parent="DialogueUI" unique_id=904365288 instance=ExtResource("6_rurhu")]
 
 [node name="TextUI" parent="DialogueUI" unique_id=1459917468 instance=ExtResource("3_ycayy")]
 

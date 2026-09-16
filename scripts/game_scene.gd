@@ -51,7 +51,7 @@ func finished_curr_dialogue():
 
 ## creates the choices menu
 func start_choice_script():
-	$DialogueUI/ChoiceUI.add_choices(curr_dialogue_length)
+	$DialogueUI/ChoiceUI.add_choices(curr_script_dialogue.choice_array)
 	pass
 	
 	
