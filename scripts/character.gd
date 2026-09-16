@@ -12,5 +12,5 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 	
-func set_character(curr_char) -> void:
-	$CharacterSprite.texture = character_array[curr_char]
+func set_character(pchar) -> void:
+	$CharacterSprite.texture = character_array[pchar]

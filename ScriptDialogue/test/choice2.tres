@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ScriptDialogue" format=3 uid="uid://cnh5853dmm7ug"]
+
+[ext_resource type="Script" uid="uid://frh0brqorqb3" path="res://ScriptDialogue/Classes/ScriptDialogue.gd" id="1_4gyu2"]
+
+[resource]
+script = ExtResource("1_4gyu2")
+dialogue_array = Array[String](["you picked choice2"])
+CHARACTER = 5
+BACKGROUND = 2
+metadata/_custom_type_script = "uid://frh0brqorqb3"

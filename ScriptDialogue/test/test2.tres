@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ScriptDialogue" format=3 uid="uid://5b4h6mile7cy"]
+
+[ext_resource type="Resource" uid="uid://b1btwq5ukd4nd" path="res://ScriptDialogue/test/test-choice.tres" id="1_ywgqa"]
+[ext_resource type="Script" uid="uid://frh0brqorqb3" path="res://ScriptDialogue/Classes/ScriptDialogue.gd" id="2_dy7d5"]
+
+[resource]
+script = ExtResource("2_dy7d5")
+dialogue_array = Array[String](["3", "4"])
+CHARACTER = 2
+next_script = ExtResource("1_ywgqa")
+metadata/_custom_type_script = "uid://frh0brqorqb3"

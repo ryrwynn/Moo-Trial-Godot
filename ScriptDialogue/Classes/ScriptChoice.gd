@@ -1,11 +1,11 @@
-extends Node
+class_name ScriptChoice
+extends IScript
+
+@export var choice_array:Array[Choice] = []
+
+func set_next_script(chosen:Choice):
+	next_script = chosen.next_script
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func get_class_name_as_string() -> String:
+	return "ScriptChoice"

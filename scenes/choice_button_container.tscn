@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cclc6wuk7jx78"]
+
+[ext_resource type="Script" uid="uid://dka2lho5h38ey" path="res://scripts/choice_button_container.gd" id="1_2o7p0"]
+
+[node name="ChoiceButtonContainer" type="PanelContainer" unique_id=1781951482]
+custom_minimum_size = Vector2(0, 40)
+size_flags_vertical = 4
+mouse_filter = 2
+script = ExtResource("1_2o7p0")
+
+[node name="ChoiceButton" type="Button" parent="." unique_id=1383289236]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ChoiceButton" unique_id=1881694171]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ChoiceButton/MarginContainer" unique_id=1051391067]
+layout_mode = 2
+mouse_filter = 2
+text = "Choice 1"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

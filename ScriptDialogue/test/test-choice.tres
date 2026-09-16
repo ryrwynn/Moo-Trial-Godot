@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ScriptChoice" format=3 uid="uid://b1btwq5ukd4nd"]
+
+[ext_resource type="Script" uid="uid://bvdbi1sw3wid1" path="res://ScriptDialogue/Classes/Choice.gd" id="1_h4gjo"]
+[ext_resource type="Resource" uid="uid://tttmdemio5qp" path="res://ScriptDialogue/test/choice1.tres" id="2_g0j2w"]
+[ext_resource type="Resource" uid="uid://cnh5853dmm7ug" path="res://ScriptDialogue/test/choice2.tres" id="3_3r3ys"]
+[ext_resource type="Script" uid="uid://dicpvtj2x7oqj" path="res://ScriptDialogue/Classes/ScriptChoice.gd" id="4_rsxlb"]
+
+[sub_resource type="Resource" id="Resource_0k6i4"]
+script = ExtResource("1_h4gjo")
+choice_text = "Choice 1"
+reputation = -2
+next_script = ExtResource("2_g0j2w")
+metadata/_custom_type_script = "uid://bvdbi1sw3wid1"
+
+[sub_resource type="Resource" id="Resource_1e10d"]
+script = ExtResource("1_h4gjo")
+choice_text = "Choice 2"
+next_script = ExtResource("3_3r3ys")
+metadata/_custom_type_script = "uid://bvdbi1sw3wid1"
+
+[resource]
+script = ExtResource("4_rsxlb")
+choice_array = Array[ExtResource("1_h4gjo")]([SubResource("Resource_0k6i4"), SubResource("Resource_1e10d")])
+metadata/_custom_type_script = "uid://dicpvtj2x7oqj"

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dqpdvqx3d3a43"]
+
+[ext_resource type="Theme" uid="uid://ca8fb6422l16a" path="res://theme/choice_default.tres" id="1_mp7kl"]
+[ext_resource type="Script" uid="uid://btlytgy55cltl" path="res://scripts/choice_ui.gd" id="2_petb5"]
+
+[node name="ChoiceUI" type="Control" unique_id=904365288]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mp7kl")
+script = ExtResource("2_petb5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=125832274]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = 0.15
+anchor_right = 0.85
+anchor_bottom = 0.75
+grow_horizontal = 2
+grow_vertical = 2

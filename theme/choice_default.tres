@@ -1,0 +1,37 @@
+[gd_resource type="Theme" format=3 uid="uid://ca8fb6422l16a"]
+
+[ext_resource type="FontFile" uid="uid://noxnoml1d270" path="res://resources/fonts/PixelifySans-Regular.ttf" id="2_t2gpe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4xsdj"]
+bg_color = Color(0.62, 0.62, 0.62, 0.9019608)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxc4h"]
+bg_color = Color(1, 1, 1, 0.9019608)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ghjyd"]
+bg_color = Color(0.23, 0.23, 0.23, 0.9019608)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2o7p0"]
+
+[resource]
+default_font = ExtResource("2_t2gpe")
+default_font_size = 0
+Button/styles/focus = SubResource("StyleBoxFlat_4xsdj")
+Button/styles/hover = SubResource("StyleBoxFlat_4xsdj")
+Button/styles/normal = SubResource("StyleBoxFlat_mxc4h")
+Button/styles/pressed = SubResource("StyleBoxFlat_ghjyd")
+PanelContainer/styles/panel = SubResource("StyleBoxEmpty_2o7p0")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/font_sizes/normal_font_size = 18

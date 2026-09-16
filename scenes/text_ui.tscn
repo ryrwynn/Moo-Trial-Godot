@@ -3,10 +3,7 @@
 [ext_resource type="Theme" uid="uid://bow4gw100xq1q" path="res://theme/default.tres" id="1_7tnem"]
 [ext_resource type="Script" uid="uid://b7xxkh122iirv" path="res://scripts/text_ui.gd" id="1_jm0wu"]
 
-[node name="TextUI" type="CanvasLayer" unique_id=1191590591]
-script = ExtResource("1_jm0wu")
-
-[node name="TextUI" type="Control" parent="." unique_id=1459917468]
+[node name="TextUI" type="Control" unique_id=1459917468]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -15,8 +12,9 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme = ExtResource("1_7tnem")
+script = ExtResource("1_jm0wu")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextUI" unique_id=1497725421]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1497725421]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 1
 anchors_preset = -1
@@ -30,27 +28,30 @@ grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
 
-[node name="CharacterPanel" type="PanelContainer" parent="TextUI/VBoxContainer" unique_id=1479393298]
+[node name="CharacterPanel" type="PanelContainer" parent="VBoxContainer" unique_id=1479393298]
 custom_minimum_size = Vector2(0, 1)
 custom_maximum_size = Vector2(400, -1)
 layout_mode = 2
 size_flags_horizontal = 0
+mouse_filter = 2
 
-[node name="CharacterMarginContainer" type="MarginContainer" parent="TextUI/VBoxContainer/CharacterPanel" unique_id=1745571111]
+[node name="CharacterMarginContainer" type="MarginContainer" parent="VBoxContainer/CharacterPanel" unique_id=1745571111]
 layout_mode = 2
+mouse_filter = 2
 
-[node name="CharacterRichTextLabel" type="RichTextLabel" parent="TextUI/VBoxContainer/CharacterPanel/CharacterMarginContainer" unique_id=1237991673]
+[node name="CharacterRichTextLabel" type="RichTextLabel" parent="VBoxContainer/CharacterPanel/CharacterMarginContainer" unique_id=1237991673]
 layout_mode = 2
+mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 20
 text = "Atlas Hartley
 "
 fit_content = true
 
-[node name="DialogueButton" type="Button" parent="TextUI/VBoxContainer" unique_id=1600602164]
+[node name="DialogueButton" type="Button" parent="VBoxContainer" unique_id=1600602164]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="DialoguePanelContainer" type="PanelContainer" parent="TextUI/VBoxContainer/DialogueButton" unique_id=5708752]
+[node name="DialoguePanelContainer" type="PanelContainer" parent="VBoxContainer/DialogueButton" unique_id=5708752]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 0
 offset_top = -1.0
@@ -60,18 +61,18 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 200.0
 mouse_filter = 2
 
-[node name="DialogueMarginContainer" type="MarginContainer" parent="TextUI/VBoxContainer/DialogueButton" unique_id=1300227190]
+[node name="DialogueMarginContainer" type="MarginContainer" parent="VBoxContainer/DialogueButton" unique_id=1300227190]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 0
 offset_right = 998.0
 offset_bottom = 132.0
 mouse_filter = 2
 
-[node name="DialogueRichTextLabel" type="RichTextLabel" parent="TextUI/VBoxContainer/DialogueButton/DialogueMarginContainer" unique_id=1802848465]
+[node name="DialogueRichTextLabel" type="RichTextLabel" parent="VBoxContainer/DialogueButton/DialogueMarginContainer" unique_id=1802848465]
 layout_mode = 2
 mouse_filter = 2
 theme_override_font_sizes/normal_font_size = 18
 text = "Lorem Ipsum"
 fit_content = true
 
-[connection signal="pressed" from="TextUI/VBoxContainer/DialogueButton" to="." method="_on_dialogue_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/DialogueButton" to="." method="_on_dialogue_button_pressed"]

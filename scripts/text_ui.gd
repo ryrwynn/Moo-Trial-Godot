@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Control
 
 signal text_button_pressed()
 
@@ -11,6 +11,6 @@ func _on_dialogue_button_pressed() -> void:
 
 
 func change_dialogue(character_name:String, dialogue:String):
-	$TextUI/VBoxContainer/CharacterPanel/CharacterMarginContainer/CharacterRichTextLabel.text = character_name
-	$TextUI/VBoxContainer/DialogueButton/DialogueMarginContainer/DialogueRichTextLabel.text = dialogue
+	$VBoxContainer/CharacterPanel/CharacterMarginContainer/CharacterRichTextLabel.text = character_name
+	$VBoxContainer/DialogueButton/DialogueMarginContainer/DialogueRichTextLabel.text = dialogue
 	pass # Replace with function body.
