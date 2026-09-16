@@ -1,0 +1,49 @@
+[gd_resource type="Theme" format=3 uid="uid://bow4gw100xq1q"]
+
+[ext_resource type="FontFile" uid="uid://cfw1j5ty3bc8p" path="res://resources/fonts/PixelifySans-Bold.ttf" id="1_1qs7s"]
+[ext_resource type="FontFile" uid="uid://noxnoml1d270" path="res://resources/fonts/PixelifySans-Regular.ttf" id="1_y77lc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_818bm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qgxfu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_28w3i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1qs7s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7tnem"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.15686275, 0.15686275, 0.15686275, 0.9019608)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3kk2"]
+bg_color = Color(1, 1, 1, 0.9019608)
+border_color = Color(0.084908105, 0.60935897, 0.7277371, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[resource]
+default_font = ExtResource("1_y77lc")
+default_font_size = 0
+Button/styles/focus = SubResource("StyleBoxEmpty_818bm")
+Button/styles/hover = SubResource("StyleBoxEmpty_qgxfu")
+Button/styles/normal = SubResource("StyleBoxEmpty_28w3i")
+Button/styles/pressed = SubResource("StyleBoxEmpty_1qs7s")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+Panel/styles/panel = SubResource("StyleBoxFlat_7tnem")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_p3kk2")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/fonts/bold_font = ExtResource("1_1qs7s")
+VBoxContainer/constants/separation = -1

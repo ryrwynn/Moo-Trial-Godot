@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://byccg8ppunllx"]
+
+[ext_resource type="Script" uid="uid://bbqbx8jjn2f5r" path="res://scripts/game_scene.gd" id="1_bw6k5"]
+[ext_resource type="PackedScene" uid="uid://db62lq1feyb8r" path="res://scenes/background.tscn" id="1_w5aja"]
+[ext_resource type="PackedScene" uid="uid://0246bhqw5bu8" path="res://scenes/character.tscn" id="2_onqr8"]
+[ext_resource type="Resource" uid="uid://bo0ksfpce6is2" path="res://ScriptDialogue/test.tres" id="2_y3j0m"]
+[ext_resource type="PackedScene" uid="uid://d27m3aot0nn4u" path="res://scenes/text_ui.tscn" id="3_ycayy"]
+
+[node name="GameScene" type="Node" unique_id=106987712]
+script = ExtResource("1_bw6k5")
+curr_script_dialogue = ExtResource("2_y3j0m")
+
+[node name="TextUI" parent="." unique_id=1459917468 instance=ExtResource("3_ycayy")]
+
+[node name="Background" parent="." unique_id=1022959895 instance=ExtResource("1_w5aja")]
+curr_background = 0
+
+[node name="Character" parent="." unique_id=126382529 instance=ExtResource("2_onqr8")]
+curr_char = 4
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1951010855]
+
+[connection signal="text_button_pressed" from="TextUI" to="." method="_on_text_ui_text_button_pressed"]

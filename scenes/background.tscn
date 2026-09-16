@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://db62lq1feyb8r"]
+
+[ext_resource type="Script" uid="uid://criqgs37lkes1" path="res://scripts/background.gd" id="1_jougr"]
+[ext_resource type="Texture2D" uid="uid://2h8a8jeyt2bu" path="res://resources/background/AttourneyBackground.png" id="1_y0upk"]
+[ext_resource type="Texture2D" uid="uid://c4x8oxr8051gr" path="res://resources/background/AttourneyForeground.png" id="2_jougr"]
+
+[node name="Background" type="Node2D" unique_id=1022959895]
+script = ExtResource("1_jougr")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1768346901]
+z_index = -1
+texture = ExtResource("1_y0upk")
+
+[node name="Foreground" type="Sprite2D" parent="." unique_id=1869698189]
+z_index = 1
+texture = ExtResource("2_jougr")
