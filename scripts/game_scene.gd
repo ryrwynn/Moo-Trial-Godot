@@ -7,6 +7,10 @@ func _ready() -> void:
 	# change first time link
 	change_text_sprite()
 	pass
+	
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("Space"):
+		_on_text_ui_text_button_pressed()	
 
 func _on_text_ui_text_button_pressed() -> void:
 	if (curr_dialogue_length <= curr_script_dialogue.dialogue_array.size()-1):
