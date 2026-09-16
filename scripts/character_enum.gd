@@ -11,3 +11,6 @@ enum CHARACTER {
 	RileyKaye,
 	TeranRivera
 }
+
+static func enum_to_name(character : CHARACTER) :
+	pass
