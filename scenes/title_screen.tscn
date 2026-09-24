@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b0kuff58ooj7b"]
+
+[ext_resource type="Texture2D" uid="uid://dghpmu0fqle5f" path="res://resources/background/OpeningScreen.png" id="1_fgkus"]
+[ext_resource type="Theme" uid="uid://d2bpuc2s80jcv" path="res://theme/title_screen.tres" id="2_s4lrb"]
+[ext_resource type="PackedScene" uid="uid://cclc6wuk7jx78" path="res://scenes/choice_button_container.tscn" id="3_mgrm8"]
+
+[node name="TitleScreen" type="Control" unique_id=1337586645]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1224748780]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fgkus")
+
+[node name="ButtonContainer" type="VBoxContainer" parent="." unique_id=1545328945]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.3
+anchor_right = 0.35
+anchor_bottom = 0.85
+grow_vertical = 2
+theme = ExtResource("2_s4lrb")
+theme_override_constants/separation = 30
+
+[node name="ChoiceButtonContainer2" parent="ButtonContainer" unique_id=1781951482 instance=ExtResource("3_mgrm8")]
+layout_mode = 2
+size_flags_vertical = 3
+choice_text = "LOAD"
+
+[node name="ChoiceButtonContainer" parent="ButtonContainer" unique_id=1748367939 instance=ExtResource("3_mgrm8")]
+layout_mode = 2
+size_flags_vertical = 3
+choice_text = "NEW"
+
+[node name="ChoiceButtonContainer3" parent="ButtonContainer" unique_id=1309894316 instance=ExtResource("3_mgrm8")]
+layout_mode = 2
+size_flags_vertical = 3
+choice_text = "CONFIG"
+
+[node name="ChoiceButtonContainer4" parent="ButtonContainer" unique_id=501859745 instance=ExtResource("3_mgrm8")]
+layout_mode = 2
+size_flags_vertical = 3
+choice_text = "QUIT"
